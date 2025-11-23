@@ -53,5 +53,11 @@ namespace Project_PBO___FarMoo.Views
         {
 
         }
+
+        private void lblRegister_Click(object sender, EventArgs e)
+        {
+            new Register().Show();
+            this.Hide();
+        }
     }
 }

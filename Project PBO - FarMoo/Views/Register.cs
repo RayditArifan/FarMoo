@@ -54,5 +54,11 @@ namespace Project_PBO___FarMoo.Views
                 MessageBox.Show("Registrasi gagal!");
             }
         }
+
+        private void lblLogin_Click(object sender, EventArgs e)
+        {
+            new Login().Show();
+            this.Hide();
+        }
     }
 }

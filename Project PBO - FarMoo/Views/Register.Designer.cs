@@ -39,6 +39,8 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            label6 = new Label();
+            lblLogin = new Label();
             SuspendLayout();
             // 
             // tbNama
@@ -79,7 +81,7 @@
             // btnRegister
             // 
             btnRegister.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRegister.Location = new Point(1423, 860);
+            btnRegister.Location = new Point(1423, 826);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(147, 47);
             btnRegister.TabIndex = 5;
@@ -137,6 +139,28 @@
             label5.TabIndex = 10;
             label5.Text = "Nomor Hp";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Arial", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(1357, 914);
+            label6.Name = "label6";
+            label6.Size = new Size(215, 26);
+            label6.TabIndex = 11;
+            label6.Text = "Sudah punya akun?";
+            // 
+            // lblLogin
+            // 
+            lblLogin.AutoSize = true;
+            lblLogin.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLogin.ForeColor = Color.DeepSkyBlue;
+            lblLogin.Location = new Point(1570, 916);
+            lblLogin.Name = "lblLogin";
+            lblLogin.Size = new Size(63, 24);
+            lblLogin.TabIndex = 12;
+            lblLogin.Text = "Login";
+            lblLogin.Click += lblLogin_Click;
+            // 
             // Register
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -145,6 +169,8 @@
             BackgroundImage = Properties.Resources.Register__2_;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1898, 1024);
+            Controls.Add(lblLogin);
+            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -177,5 +203,7 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Label label6;
+        private Label lblLogin;
     }
 }

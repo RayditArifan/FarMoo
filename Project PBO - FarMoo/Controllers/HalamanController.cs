@@ -10,17 +10,6 @@ namespace Project_PBO___FarMoo.Controllers
 {
     public class HalamanController
     {
-        public int GetStokSusu()
-        {
-            using var db = new DbContext();
-            db.Open();
-
-            string query = "SELECT COALESCE(SUM(volume_liter), 0) FROM stok_batch";
-
-            using var cmd = new NpgsqlCommand(query, db.Connection);
-            return Convert.ToInt32(cmd.ExecuteScalar());
-        }
-
         public int GetTotalPengeluaran(int userId)
         {
             using var db = new DbContext();

@@ -27,14 +27,8 @@ namespace Project_PBO___FarMoo.Views
         }
         private void LoadDashboard()
         {
-            // 1. Ucapan welcome
             lblWelcome.Text = $"Halo, {currentUser.NamaLengkap} 👋";
 
-            // 2. Ambil stok susu
-            int stok = dashboard.GetStokSusu();
-            lblStok.Text = $"{stok} Liter";
-
-            // 3. Ambil total pengeluaran user
             int totalPengeluaran = dashboard.GetTotalPengeluaran(currentUser.UserId);
             lblPengeluaran.Text = $"Rp {totalPengeluaran:N0}";
         }

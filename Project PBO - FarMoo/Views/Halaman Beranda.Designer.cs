@@ -28,48 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel3 = new Panel();
-            lblStok = new Label();
-            lblStokTitle = new Label();
             panel4 = new Panel();
             lblPengeluaran = new Label();
             label1 = new Label();
             lblWelcome = new Label();
-            panel3.SuspendLayout();
             panel4.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Transparent;
-            panel3.BackgroundImage = Properties.Resources.Kotak_Beranda;
-            panel3.BackgroundImageLayout = ImageLayout.Stretch;
-            panel3.Controls.Add(lblStok);
-            panel3.Controls.Add(lblStokTitle);
-            panel3.Location = new Point(900, 50);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(300, 150);
-            panel3.TabIndex = 1;
-            // 
-            // lblStok
-            // 
-            lblStok.AutoSize = true;
-            lblStok.Font = new Font("Arial", 10F);
-            lblStok.Location = new Point(118, 89);
-            lblStok.Name = "lblStok";
-            lblStok.Size = new Size(62, 23);
-            lblStok.TabIndex = 1;
-            lblStok.Text = "label1";
-            // 
-            // lblStokTitle
-            // 
-            lblStokTitle.AutoSize = true;
-            lblStokTitle.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblStokTitle.Location = new Point(98, 15);
-            lblStokTitle.Name = "lblStokTitle";
-            lblStokTitle.Size = new Size(107, 24);
-            lblStokTitle.TabIndex = 0;
-            lblStokTitle.Text = "Stok Susu";
             // 
             // panel4
             // 
@@ -123,13 +87,10 @@
             ClientSize = new Size(1898, 1024);
             Controls.Add(lblWelcome);
             Controls.Add(panel4);
-            Controls.Add(panel3);
             DoubleBuffered = true;
             Name = "Halaman_Beranda";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Halaman_Beranda";
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ResumeLayout(false);
@@ -137,10 +98,7 @@
         }
 
         #endregion
-        private Panel panel3;
         private Panel panel4;
-        private Label lblStokTitle;
-        private Label lblStok;
         private Label label1;
         private Label lblPengeluaran;
         private Label lblWelcome;
